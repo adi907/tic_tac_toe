@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+#grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    width:30vw;height:30vw;
+    /* border:2px solid black; */
+
+    margin:1.2rem auto;
+
+    position: relative;
+}
+
+.element{
+    border:2px solid red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:4vw;
+}
+.element:hover{
+    background-color: rgb(243, 243, 243);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#reset{
+    display:block;
+    margin:0px auto;
+    font-size: 1.2rem;
+}
+
+#info{
+    position: absolute;
+    top:50%;right:3%; 
+
+    /* border: 2px solid red; */
+    padding:23px;
+
+}
+#turninfo{
+    font-size:3rem;
+    font-family: 'Cormorant SC', serif;
+}
+#result{
+    font-size:1.8rem;
+    font-family: 'Cormorant SC', serif;
+}
+
+#line{
+    background-color: black;
+    width:0vw;
+    height:5px;
+
+    /* display:none; */
+    position: absolute;
+
+    transition: width 1s ease-in-out;
+}
+
+
+@media only screen and (max-width:900px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        /* border: 2px solid red; */
+        /* padding:23px; */
+        margin:0px;padding:0px;
+
+    }
+    #info{
+        /* position:relative; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        position: relative;
+        left:0px;
+        top:10px;
+        /* border: 2px solid red; */
+        font-family: 'Cormorant SC', serif;
+        font-size:1rem;
+
+        text-align: center;
+
+    }
+    #turninfo{
+        font-size:2rem;
+        font-family: 'Cormorant SC', serif;
+    }
+    #result{
+        font-size:2rem;
+        font-family: 'Cormorant SC', serif;
+    }
+
+    #reset{
+        /* display:block; */
+        /* margin:0px auto; */
+        display: inline-block;
+        font-size: 1rem;
+    }
+}

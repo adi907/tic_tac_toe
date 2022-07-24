@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <script src="script.js" defer></script>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <title>Tic-tac-toe</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark" style="background-color:black;display: flex;align-items: center;">
+        <a class="navbar-brand" href="#">
+          <img src="static/tt.png" width="50" height="50" class="d-inline-block align-top" style="margin-left:10%" alt="">
+          <span style="font-size:2rem;">TIC-TAC-TOE</span>
+          <!-- TIC-TAC-TOE -->
+        </a>
+    </nav>
+    
+    <h1 style="text-align:center;margin:2rem;">Welcome to Tic-tac-toe game</h1>
+
+    <div id="container">
+
+        
+        <div id="grid">
+            <div id="line"></div>
+
+            <div class="element bt-0 bl-0"></div>
+            <div class="element bt-0 "></div>
+            <div class="element bt-0 br-0"></div>
+            <div class="element bl-0"></div>
+            <div class="element "></div>
+            <div class="element br-0"></div>
+            <div class="element bb-0 bl-0"></div>
+            <div class="element bb-0 "></div>
+            <div class="element bb-0 br-0"></div>
+            
+        </div>
+        
+        <button id="reset" class="btn btn-outline-danger">Reset</button>
+        
+        <div id="info">
+            <p id="turninfo">Turn for X</p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+        
+</body>
+</html>
+
+<!-- Add Winning line-draw animation -->
+<!-- Re-add sounds -->

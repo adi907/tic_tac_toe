@@ -1,0 +1,14 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "Tic tac toe game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
